@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+			defer
+		></script>
+		<script src="./main.js" defer></script>
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">Quang</div>
+				<ul class="navbar-items">
+					<a href="#">home.</a>
+					<a href="#knowledge">knowledge.</a>
+					<a href="#works">works.</a>
+					<a href="#about">about me.</a>
+					<a href="#contact">contact.</a>
+				</ul>
+				<ion-icon name="menu" class="menu-icon"></ion-icon>
+			</div>
+			<div id="menu">
+				<div class="overlay hidden">
+					<div class="items">
+						<a href="#">home.</a>
+						<a href="#knowledge">knowledge.</a>
+						<a href="#works">works.</a>
+						<a href="#about">about me.</a>
+						<a href="#contact">contact.</a>
+					</div>
+					<ion-icon name="close" class="close"></ion-icon>
+				</div>
+			</div>
+			<div class="hero">
+				<div class="hero-text">
+					<div class="title">Hi. My name is Quang.</div>
+					<div class="sub-title">I'm a Web Developer.</div>
+				</div>
+				<div class="arrow">
+					<p>scroll</p>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div id="knowledge">
+				<div class="title">knowledge.</div>
+				<div class="items">
+					<img src="./img/react-2.svg" alt="React" />
+					<img src="./img/tailwindcss.svg" alt="tailwindcss" />
+					<img src="./img//sass-1.svg" alt="sass" />
+					<img src="./img/redux.svg" alt="redux" />
+					<img src="./img/nodejs-1.svg" alt="nodejs" />
+					<img src="./img/typescript.svg" alt="typescript" />
+				</div>
+			</div>
+			<div id="works">
+				<div class="title">works.</div>
+				<div class="items">
+					<div class="item">
+						<div class="img-wrapper">
+							<img src="./img/figmaland.svg" alt="figmaland" />
+						</div>
+						<div class="item-title">FigmaLand</div>
+						<div class="desc">My clone of a figma design</div>
+						<div class="overlay">
+							<a
+								href="https://holy5.github.io/FigmaLand/"
+								rel="noopener noreferrer"
+								target="_blank"
+								class="btn"
+								>learn more</a
+							>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img-wrapper">
+							<img
+								src="./img/music-player.png"
+								alt="music-player"
+							/>
+						</div>
+						<div class="item-title">Music Player</div>
+						<div class="desc">
+							A simple music player with dark mode
+						</div>
+						<div class="overlay">
+							<a
+								href="https://holy5.github.io/music_player/"
+								rel="noopener noreferrer"
+								target="_blank"
+								class="btn"
+								>learn more</a
+							>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img-wrapper">
+							<img
+								src="./img/react-movjp.png"
+								alt="react-movie"
+							/>
+						</div>
+						<div class="item-title">React Movjp</div>
+						<div class="desc">A movie website build with React</div>
+						<div class="overlay">
+							<a
+								href="https://react-movjp.netlify.app/"
+								rel="noopener noreferrer"
+								class="btn"
+								target="_blank"
+								>learn more</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="about">
+				<div>
+					<div class="title">about me.</div>
+					<p class="content">
+						I'm studying Mechatronics at Ho Chi Minh University of
+						Technology (HCMUT). I'm also a self-taught Web
+						Developer.
+					</p>
+				</div>
+			</div>
+			<div id="contact">
+				<div class="title">contact.</div>
+				<div class="contact-items">
+					<a
+						href="https://ionic.io/ionicons/v4"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<ion-icon name="logo-facebook" class="icon"></ion-icon>
+					</a>
+					<a
+						href="https://ionic.io/ionicons/v4"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<ion-icon name="logo-github" class="icon"></ion-icon>
+					</a>
+					<a
+						href="mailto:levinhquang1412@gmail.com"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<ion-icon name="mail" class="icon"></ion-icon>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
